@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synapse — Agentic Document Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">◆</span>
+        <span class="brand-name">Synapse</span>
+      </div>
+      <p class="brand-sub">Agentic RAG Document Assistant</p>
+
+      <label class="upload-btn" for="file-input">
+        + Upload document
+        <input id="file-input" type="file" accept=".pdf,.txt,.md" hidden />
+      </label>
+      <div id="upload-status" class="upload-status"></div>
+
+      <div class="doc-list-heading">Documents</div>
+      <ul id="doc-list" class="doc-list"></ul>
+    </aside>
+
+    <main class="chat">
+      <div id="messages" class="messages">
+        <div class="empty-state">
+          <h1>Ask anything about your documents</h1>
+          <p>Upload a PDF, TXT, or MD file, then ask a question. Answers are grounded in your sources with citations.</p>
+        </div>
+      </div>
+
+      <form id="chat-form" class="chat-form">
+        <input id="chat-input" type="text" placeholder="Ask a question about your documents..." autocomplete="off" />
+        <button type="submit" id="send-btn">Send</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

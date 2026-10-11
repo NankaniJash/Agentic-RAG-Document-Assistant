@@ -1,0 +1,10 @@
+[
+  {
+    "question": "What does Synapse use to combine keyword and vector search results?",
+    "expected_source": "test_doc.txt"
+  },
+  {
+    "question": "What local model does Synapse use for embeddings?",
+    "expected_source": "test_doc.txt"
+  }
+]

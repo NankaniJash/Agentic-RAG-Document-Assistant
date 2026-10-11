@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+httpx
+pypdf
+faiss-cpu
+rank-bm25
+python-multipart
+numpy
+python-dotenv
+slowapi
