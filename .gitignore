@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+backend/data/
+backend/app/eval/last_run_report.json
+.pytest_cache/
